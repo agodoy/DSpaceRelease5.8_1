@@ -194,7 +194,7 @@ public class RoleIngester implements PackageIngester
                 } catch (DecoderException ex) {
                     throw new PackageValidationException("Unable to decode hexadecimal password hash or salt", ex);
                 }
-                eperson.setPasswordHash(password);
+//                eperson.setPasswordHash(password);
             }
             else
             {

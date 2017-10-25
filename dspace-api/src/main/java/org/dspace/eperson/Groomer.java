@@ -126,8 +126,8 @@ public class Groomer
 
                 System.out.print(id);
                 System.out.print('\t');
-                System.out.print(account.getLastActive());
-                System.out.print('\t');
+//                System.out.print(account.getLastActive());
+//                System.out.print('\t');
                 System.out.print(account.getEmail());
                 System.out.print('\t');
                 System.out.print(account.getNetid());

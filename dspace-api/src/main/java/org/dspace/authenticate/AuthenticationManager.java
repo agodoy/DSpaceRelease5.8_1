@@ -168,7 +168,7 @@ public class AuthenticationManager
                 if (ret == AuthenticationMethod.SUCCESS)
                 {
                     EPerson me = context.getCurrentUser();
-                    me.setLastActive(new Date());
+//                    me.setLastActive(new Date());
                     try
                     {
                         me.update();

@@ -159,25 +159,25 @@ public class LoadLastLogin
                 System.err.println("Skipping unknown user:  " + name);
                 continue;
             }
-            Date previous = ePerson.getLastActive();
-            if ((null == previous) || date.after(previous))
-            {
-                if (PRETEND)
-                {
-                    System.out.printf("%d\t%s\t%s\t%s\t%s\n",
-                            ePerson.getID(),
-                            date,
-                            ePerson.getEmail(),
-                            ePerson.getNetid(),
-                            ePerson.getFullName());
-                }
-                else
-                {
-                    ePerson.setLastActive(date);
-                    ePerson.update();
-                    ctx.commit();
-                }
-            }
+//            Date previous = ePerson.getLastActive();
+//            if ((null == previous) || date.after(previous))
+//            {
+//                if (PRETEND)
+//                {
+//                    System.out.printf("%d\t%s\t%s\t%s\t%s\n",
+//                            ePerson.getID(),
+//                            date,
+//                            ePerson.getEmail(),
+//                            ePerson.getNetid(),
+//                            ePerson.getFullName());
+//                }
+//                else
+//                {
+//                    ePerson.setLastActive(date);
+//                    ePerson.update();
+//                    ctx.commit();
+//                }
+//            }
         }
 
         ctx.complete();
